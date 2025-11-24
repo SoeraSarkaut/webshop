@@ -1,0 +1,168 @@
+/* CSS for the checkout page */
+body {
+    background-color: #1a293a;
+    color-scheme: dark; /* Color scheme for light and dark mode */
+    font-family: open sans, sans-serif;
+    color: lightgray; /* Text color */
+    font-size: 18px; /* Text size */
+}
+
+/* Grid container */
+.parent {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* 8 columns */
+    grid-template-rows: repeat(8, 1fr); /* 8 rows */
+    grid-column-gap: 0px; /* Gap between columns */
+    grid-row-gap: 10px; /* Gap between rows */
+}
+
+/* Grid areas */
+.grid1 { grid-area: 1 / 3 / 2 / 7; } /* Grid area 1 */
+.grid2 { grid-area: 2 / 3 / 9 / 5; } /* Grid area 2 */
+.grid3 { grid-area: 2 / 5 / 9 / 7; } /* Grid area 3 */
+
+/* Header container */
+#header {
+    display: flex; /* Flexbox */
+    justify-content: flex-start; /* Items start left(start) */
+    gap: 200px; /* Gap between items */
+    border-bottom: 3px solid lightgray;
+}
+
+/* Logo */
+#weblogo {
+    width: 100px; /* Image width */
+}
+
+/* Form container */
+#form {
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Column so items stack */
+    gap: 20px; /* Gap between items */
+    padding-top: 20px;
+}
+
+/* Personal info input container */
+#personalinfoinput {
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Column so items stack */
+    gap: 5px; /* Gap between items */
+}
+
+/* Birthday input container */
+#birthdayinput {
+    height: 26px; /* Height of the input box */
+}
+
+/* Contact info input container */
+.contactinfotext {
+    width: 100px; /* Width of the input box */
+    height: 20px; /* Height of the input box */
+}
+
+/* Name input container */
+.nametext {
+    width: 100px; /* Width of the input box */
+    height: 20px; /* Height of the input box */
+}
+
+/* name preposition */
+#preposition {
+    width: 50px; /* Width of the input box */
+    height: 20px; /* Height of the input box */
+}
+
+/* Address input container */
+.addresstext {
+    margin: 5px;
+    width: 100px; /* Width of the input box */
+    height: 20px; /* Height of the input box */
+}
+
+/* Country selector */
+#countryselector {
+    width: 125px; /* Width of the select box */
+    height: 26px; /* Height of the select box */
+    margin-left: 5px;
+}
+
+/* Payment images container */
+#paymentimg {
+    display: flex; /* Flexbox */
+    justify-content: center; /* Center items */
+    gap: 20px; /* Gap between items */
+    width: 100%; /* Image width */
+}
+
+/* Payment images */
+.paymentimages {
+    width: 100%; /* Image width */
+    max-width: 100px; /* Maximum image width */
+}
+
+/* Payment check container */
+#paymentcheck {
+    padding-top: 10px;
+    display: flex; /* Flexbox */
+    justify-content: center; /* Center items */
+    gap: 100px; /* Gap between items */
+}
+
+/* Terms and conditions container */
+#termsandconditions {
+    display: flex; /* Flexbox */
+    justify-content: center; /* Center items */
+    gap: 10px; /* Gap between items */
+    padding-bottom: 20px;
+}
+
+/* Pay container */
+#pay {
+    display: flex; /* Flexbox */
+    justify-content: center; /* Center items */
+}
+
+/* Pay button */
+#paybutton {
+    font-size: 30px; /* Text size */
+    background-color: #2ba23f; /* Green button color */
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none; /* No border */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Sidebar container */
+#sidebar {
+    background-color: #181c24; 
+    border-radius: 50px; /* Rounded corners */
+    margin: 20px;
+    margin-left: 40px;
+    margin-bottom: 190px;
+    padding: 30px;
+}
+
+/* Product container */
+#product {
+    display: flex; /* Flexbox */
+    justify-content: center; /* center items */
+    align-items: center; /* center items */
+    flex-direction: column; /* Items stack like columns */
+}
+
+/* Product image */
+#productimg {
+    width: 100%; /* Image width */
+    max-width: 200px; /* Maximum image width */
+}
+
+/* Product title text */
+#producttitle {
+    font-size: 25px; /* Text size */
+}
+
+/* Total price text */
+#totalprice {
+    font-size: 30px; /* Text size */
+    font-weight: bold; /* Bold text */
+}

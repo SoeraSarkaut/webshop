@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="assets/css/checkout.css">
+</head>
+<body>
+    <!-- Container for the entire page -->
+    <div class="parent" id="container">
+        <!-- Header section -->
+        <div class="grid1" id="header">
+            <div id="websitelogo">
+                <!-- Websitelogo with link to homepage -->
+                <a href="index.html"><img id="weblogo" src="assets/images/weblogo.png" alt="logo"></a>
+            </div>
+            <!-- Title of the page -->
+            <h1>Checkout</h1>
+        </div>
+         <!-- Customer form section -->
+        <div class="grid2" id="customerform">
+            <!-- Navigation -->
+            <div id="currentpage">
+                <a href="index.html">Steam Keys</a>
+                <span>&#10148; Checkout</span>
+            </div>
+            <!-- Form for customer information -->
+            <form id="form" method="post">
+                <!-- Gender selection -->   
+                <div id="gendercheck">
+                    <h3>Personal Info:</h3>
+                    <hr>
+                    <label>Gender:</label>
+                    <!-- Radio buttons for gender selection -->
+                    <input type="radio" id="male" name="gender" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" required>
+                    <label for="female">Female</label>
+                </div>
+                <!--Personal Info Input-->
+                <div id="personalinfoinput">
+                    <div id="nameinput">
+                        <label>Name:</label>
+                        <!-- Input fields for name -->
+                        <input class="nametext" type="text" placeholder="First name" required>
+                        <input id="preposition" type="text" placeholder="middle">
+                        <input class="nametext" type="text" placeholder="Last name" required>
+                    </div>
+                    <div id="calender">
+                        <label for="birthdayinput">Birthday:</label>
+                        <!-- Input field for birthday -->
+                        <input type="date" id="birthdayinput" name="birthday" required>
+                    </div>
+                    <div id="contactinfo">
+                        <label>Contact Info:</label>
+                        <!-- Input fields for email and phone number -->
+                        <input class="contactinfotext" type="email" placeholder="Email" required>
+                        <input class="contactinfotext" type="tel" placeholder="Phone number" required>
+                    </div>
+                </div>
+                <!-- Address input section -->
+                <div id="addressinput">
+                    <h3>Address Info:</h3>
+                    <hr>
+                    <label for="countryselector">Country:</label>
+                    <!-- Country selector -->
+                    <select name="country" id="countryselector">
+                        <option value="Nederlands">United Kingdom</option>
+                        <option value="English">Netherlands</option>
+                        <option value="Japanese">Japan</option>
+                        <option value="French">France</option>
+                    </select>
+                    <!-- Input fields for address -->
+                    <input class="addresstext" type="text" placeholder="Street name" required>
+                    <input class="addresstext" type="number" placeholder="House num" required>
+                    <input class="addresstext" type="text" placeholder="Postal code" required>
+                    <input class="addresstext" type="text" placeholder="City" required>
+                </div>
+                <!-- Payment method section -->
+                <div id="paymentinput">
+                    <h3>Payment Method:</h3>
+                    <hr>
+                    <!-- Payment method images -->
+                    <div id="paymentimg">
+                        <img class="paymentimages" src="assets/images/ideal.jpg" alt="ideal">
+                        <img class="paymentimages" src="assets/images/paypal.png" alt="paypal">
+                        <img class="paymentimages" src="assets/images/visa_mastercard.png" alt="visamastercard">
+                    </div>
+                    <div id="paymentcheck">
+                        <!-- Radio buttons for selecting payment method -->
+                        <input type="radio" name="payment" required>
+                        <input type="radio" name="payment" required>
+                        <input type="radio" name="payment" required>
+                    </div>
+                </div>
+                <!-- Proceed to payment section -->
+                <div id="proceed">
+                    <h3>Proceed to payment</h3>
+                    <hr>
+                    <div id="termsandconditions">
+                        <!-- Checkbox for agreeing to terms and conditions -->
+                        <input type="checkbox" id="t&c" name="termsandconditions" required>
+                        <label for="t&c">I agree to the <a href="">terms and conditions</a></label>
+                    </div>
+                    <div id="pay">
+                        <!-- Button for proceeding to payment -->
+                        <input id="paybutton" type="submit" value="Pay">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- Sidebar section -->
+        <div class="grid3" id="sidebar">
+            <div id="product">
+                <h3>In your cart:</h3>
+                <!-- Product information -->
+                <p id="productamount">- 1X +</p>
+                <!-- Product image-->
+                <img id="productimg" src="assets/images/helldivers2.jpg" alt="steamkey">
+                <!-- Product title and price -->
+                <p id="producttitle">Helldivers 2</p>
+                <p>Steam key: €20</p>
+                <p>Service fee: €5</p>
+                <!-- Total price -->
+                <p id="totalprice">Total = €25</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

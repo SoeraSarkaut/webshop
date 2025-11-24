@@ -1,0 +1,250 @@
+/* Html Body */
+body {
+    background-color: #1a293a;
+    color-scheme: dark; /* Color scheme for light and dark mode */
+}
+
+/* Container */
+#container {
+    font-family: open sans, sans-serif;
+    width: 940px; /* Width of the container */
+    margin: 0 auto; /* Center align the container */
+}
+
+/* Generic div styling */
+div {
+    background-color: #181c24; /* Background color of all divs */
+    margin: 2px; /* Margin of all divs */
+}
+
+/* Big text class */
+.bigtext {
+    font-size: 20px;
+}
+
+/* Navigation Section 1 */
+#nav1 {
+    display: flex; /* Flexbox */
+    justify-content: space-between; /* Space between items */
+    width: 893px;
+    padding-left: 10px;
+    color: lightgray; /* Text color */
+}
+
+/* Personal menu */
+#personalmenu {
+    display: flex; /* Flexbox */
+    flex-direction: row-reverse; /* Reverse direction row */
+    gap: 10px; /* Gap between items */
+}
+
+/* Account and sign-in links */
+#account, #inloggen {
+    padding-right: 10px;
+    border-right: 3px solid lightgray;
+}
+
+/* Navigation Section 2 */
+#nav2 {
+    display: flex; /* Flexbox */
+    justify-content: flex-start; /* Items start left(start) */
+    gap: 38px; /* Gap between items */
+    padding-left: 10px;
+    padding-bottom: 70px;
+    width: 893px;
+    height: 40px;
+}
+
+/* Logo */
+#logo {
+    padding-top: 5px;
+    width: 120px;
+    height: 100px;
+}
+
+/* Buttons */
+#buttons {
+    padding-top: 40px;
+}
+
+/* Navigation buttons */
+.nav2buttons {
+    font-size: 14px;
+}
+
+/* Search bar */
+#searchbar {
+    padding-top: 40.5px;
+    padding-left: 28px;
+    color: lightgray; /* Text color */
+}
+
+/* Search input */
+#search {
+    width: 70px;
+    height: 17px;
+}
+
+/* Sidebar */
+#sidebar {
+    width: 190px;
+    height: 1300px;
+    float: left;
+    padding-left: 10px;
+}
+/* Current page */
+#currentpage {
+    padding: 10.45px;
+    color: lightgray; /* Text color */
+}
+
+/* Player support section */
+#playersupport {
+    border: 3px solid lightgray;
+    padding: 2px;
+    margin: 0 auto; /* Center align */
+    color: lightgray; /* Text color */
+}
+
+/* Genre section */
+#genre {
+    border: 3px solid lightgray;
+    padding: 2px;
+    margin: 0 auto; /* Center align */
+    color: lightgray; /* Text color */
+}
+
+/* Price slider section */
+#priceslider {
+    border: 3px solid lightgray;
+    padding: 10px;
+    margin: 0 auto; /* Center align */
+    color: lightgray; /* Text color */
+}
+
+/* Recently viewed section */
+#recentlyviewed {
+    border: 3px solid lightgray;
+    padding: 2px;
+    margin: 0 auto; /* Center align */
+    color: lightgray; /* Text color */
+}
+
+/* Recent items */
+#recent {
+    display: flex; /* Flexbox */
+    justify-content: flex-start; /* Items start left(start)d */
+}
+
+/* Recent item image */
+#recentkey {
+    width: 75px;
+    padding: 2px;
+}
+
+/* Recent item info */
+#recentinfo {
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Items stack like columns */
+}
+
+/* Recent item price */
+#recentprice {
+    padding-left: 25px;
+}
+
+/* Content section */
+#content {
+    width: 725px;
+    height: 3250px;
+    float: left;
+    color: lightgray; /* Text color */
+}
+
+/* Sort section */
+#sort {
+    padding-top: 36px;
+    padding-left: 30px;
+    display: flex; /* Flexbox */
+    justify-content: space-between; /* Space between items */
+}
+
+/* Sort selectors */
+#sortselectors {
+    padding-top: 20px;
+}
+
+/* Products section */
+#products {
+    display: flex; /* Flexbox */
+    flex-direction: row; /* Items form a row */
+    padding: 20px;
+    gap: 10px; /* Gap between items */
+    flex-wrap: wrap; /* Wrap items */
+}
+
+/* Product */
+.product {
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Items stack like columns */
+    border: 3px solid lightgray;
+    padding: 30px;
+    padding-bottom: 20px;
+}
+
+/* Product image */
+.productimg {
+    width: 150px;
+    height: 150px;
+}
+
+/* Product info */
+.productinfo {
+    display: flex; /* Flexbox */
+    align-items: center; /* Align items in center */
+    flex-direction: column; /* Items stack like columns */
+    border-bottom: 1px solid lightgray;
+}
+
+/* Shopping cart icon */
+.shopcart {
+    width: 100px;
+    display: flex; /* Flexbox */
+    padding-top: 10px;
+    padding-left: 25px;
+}
+
+/* Footer section 1 */
+#footer1 {
+    color: lightgray; /* Text color */
+    border-top: 2px solid lightgray; /* Border top */
+    width: 935px;
+    height: 250px;
+    clear: left;
+}
+
+/* Footer titles */
+#titles {
+    display: flex; /* Flexbox */
+    justify-content: center; /* Center items */
+    gap: 125px; /* Gap between items */
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+/* Footer information */
+#information {
+    display: flex; /* Flexbox */
+    justify-content: space-around; /* Space around items */
+    font-size: 15px;
+}
+
+/* Footer section 2 */
+#footer2 {
+    display: flex; /* Flexbox */
+    justify-content: center; /* Center items */
+    padding-bottom: 20px;
+    font-size: 20;
+    border-top: 3px solid lightgray;
+    color: lightgray; /* Text color */
+}

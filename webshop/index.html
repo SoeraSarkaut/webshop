@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webshop</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="assets/css/webshop.css">
+</head>
+<body>
+    <!-- Container for the entire page -->
+    <div id="container">
+        <hr>
+        <!-- Navigation Section 1 -->
+        <div id="nav1">
+            <!-- Language Selector -->
+            <div id="nav1selector">
+                <label for="language">Chosen language:</label>
+                <select name="language" id="language">
+                    <option value="Nederlands">English</option>
+                    <option value="English">Dutch</option>
+                    <option value="Japanese">Japanese</option>
+                    <option value="French">French</option>
+                </select>
+            </div>
+             <!-- Personal Menu -->
+            <div id="personalmenu">
+                <a id="afrekenen" href="checkout.html">Checkout</a>
+                <a id="inloggen" href="">Sign-in</a>
+                <a id="account" href="">My account</a>
+            </div>
+        </div>
+        <hr>
+         <!-- Navigation Section 2 -->
+        <div id="nav2">
+            <!-- Website Logo -->
+            <div id="websitelogo">
+                <img id="logo" src="assets/images/weblogo.png" alt="Logo">   
+            </div>
+            <!-- Navigation Buttons -->
+            <div id="buttons">
+                <button class="nav2buttons" type="button">Home</button>
+                <button class="nav2buttons" type="button">Steam Accounts</button>
+                <button class="nav2buttons" type="button">Steam Keys</button>
+                <button class="nav2buttons" type="button">Steam Giftcards</button> 
+            </div>
+            <!-- Search Bar -->
+            <div id="searchbar">
+                <input id="search" type="text" placeholder="Search..">
+                <button class="nav2buttons" type="button">Compare</button>
+                <button class="nav2buttons" type="button" onclick="window.location.href='checkout.html';">Shop Cart (1)</button>
+            </div>
+        </div>
+        <hr>
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <!-- Current Page -->
+            <div id="currentpage">
+                <a id="home" href="">Home</a>
+                <span>&#10148; Steam Keys</span>
+            </div>
+            <!-- Player Support -->
+            <div id="playersupport">
+                <p class="bigtext">Steam Keys</p>
+                <hr>
+                <p>&#11162; Singleplayer</p>
+                <p>&#11162; Multiplayer</p>
+                <p>&#11162; Co-op</p>
+            </div>
+            <!-- Genre -->
+            <div id="genre">
+                <p class="bigtext">Genre</p>
+                <hr>
+                <p>&#11162; Shooter</p>
+                <p>&#11162; Adventure</p>
+                <p>&#11162; Strategy</p>
+                <p>&#11162; Horror</p>
+                <a id="more" href="">More...&#11163;</a>
+            </div>
+            <!-- Price Slider -->
+            <div id="priceslider">
+                <p>Price range: $<span id="rangeValue">100</span></p>
+                <input id="slider" type="range" min="0" max="200" value="100" oninput="rangeValue.innerText = this.value">                 
+            </div>
+            <!-- Recently Viewed -->
+            <div id="recentlyviewed">
+                <p class="bigtext">Recently Viewed</p>
+                <hr>
+                <div id="recent">
+                    <img id="recentkey" src="assets/images/helldivers2.jpg" alt="Helldivers 2">
+                    <div id="recentinfo">
+                        <p>Helldivers 2</p>
+                        <p id="recentprice">€20</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Content Section -->
+        <div id="content">
+            <!-- Sort Section -->
+            <div id="sort">
+                <h3>Steam Keys</h3>
+                <!-- Sort selector -->
+                <div id="sortselectors">
+                    <label for="sortby">Sort by:</label>
+                    <select name="sortby" id="sortby">
+                        <option value="popularity">Popularity</option>
+                        <option value="price">Price</option>
+                        <option value="release">Release date</option>
+                    </select>
+                    <!-- Product amount selector -->
+                    <label for="show">Show:</label>
+                    <select name="show" id="show">
+                        <option value="30">30</option>
+                        <option value="60">60</option>
+                        <option value="90">90</option>
+                    </select>
+                </div>
+            </div>
+            <hr>
+            <!-- Product Section -->
+            <div id="products">
+                <!-- Each product has an image, product info, and a shopping cart icon -->
+                <div class="product">
+                    <!-- Product Image -->
+                    <img class="productimg" src="assets/images/helldivers2.jpg" alt="helldivers2">
+                    <div class="productinfo">
+                        <!-- Product Info -->
+                        <p>Helldivers 2</p>
+                        <p>From: €20</p>
+                    </div>
+                    <!-- Clickable Shopping Cart Icon -->
+                    <p>
+                        <a href="checkout.html">
+                            <img class="shopcart" src="assets/images/shopcart.png" alt="shopcart">
+                        </a>
+                    </p>
+                </div>
+                <!-- Repeats for each product -->
+                <div class="product">
+                    <img class="productimg" src="assets/images/helldivers2.jpg" alt="helldivers2">
+                    <div class="productinfo">
+                        <p>Helldivers 2</p>
+                        <p>From: €20</p>
+                    </div>
+                    <p>
+                        <a href="checkout.html">
+                            <img class="shopcart" src="assets/images/shopcart.png" alt="shopcart">
+                        </a>
+                    </p>
+                </div>
+                <div class="product">
+                    <img class="productimg" src="assets/images/helldivers2.jpg" alt="helldivers2">
+                    <div class="productinfo">
+                        <p>Helldivers 2</p>
+                        <p>From: €20</p>
+                    </div>
+                    <p>
+                        <a href="checkout.html">
+                            <img class="shopcart" src="assets/images/shopcart.png" alt="shopcart">
+                        </a>
+                    </p>
+                </div>
+                <div class="product">
+                    <img class="productimg" src="assets/images/helldivers2.jpg" alt="helldivers2">
+                    <div class="productinfo">
+                        <p>Helldivers 2</p>
+                        <p>From: €20</p>
+                    </div>
+                    <p>
+                        <a href="checkout.html">
+                            <img class="shopcart" src="assets/images/shopcart.png" alt="shopcart">
+                        </a>
+                    </p>
+                </div>
+                <div class="product">
+                    <img class="productimg" src="assets/images/helldivers2.jpg" alt="helldivers2">
+                    <div class="productinfo">
+                        <p>Helldivers 2</p>
+                        <p>From: €20</p>
+                    </div>
+                    <p>
+                        <a href="checkout.html">
+                            <img class="shopcart" src="assets/images/shopcart.png" alt="shopcart">
+                        </a>
+                    </p>
+                </div>
+                <div class="product">
+                    <img class="productimg" src="assets/images/helldivers2.jpg" alt="helldivers2">
+                    <div class="productinfo">
+                        <p>Helldivers 2</p>
+                        <p>From: €20</p>
+                    </div>
+                    <p>
+                        <a href="checkout.html">
+                            <img class="shopcart" src="assets/images/shopcart.png" alt="shopcart">
+                        </a>
+                    </p>
+                </div>
+                <div class="product">
+                    <img class="productimg" src="assets/images/helldivers2.jpg" alt="helldivers2">
+                    <div class="productinfo">
+                        <p>Helldivers 2</p>
+                        <p>From: €20</p>
+                    </div>
+                    <p>
+                        <a href="checkout.html">
+                            <img class="shopcart" src="assets/images/shopcart.png" alt="shopcart">
+                        </a>
+                    </p>
+                </div>
+                <div class="product">
+                    <img class="productimg" src="assets/images/helldivers2.jpg" alt="helldivers2">
+                    <div class="productinfo">
+                        <p>Helldivers 2</p>
+                        <p>From: €20</p>
+                    </div>
+                    <p>
+                        <a href="checkout.html">
+                            <img class="shopcart" src="assets/images/shopcart.png" alt="shopcart">
+                        </a>
+                    </p>
+                </div>
+                <div class="product">
+                    <img class="productimg" src="assets/images/helldivers2.jpg" alt="helldivers2">
+                    <div class="productinfo">
+                        <p>Helldivers 2</p>
+                        <p>From: €20</p>
+                    </div>
+                    <p>
+                        <a href="checkout.html">
+                            <img class="shopcart" src="assets/images/shopcart.png" alt="shopcart">
+                        </a>
+                    </p>
+                </div>
+                <div class="product">
+                    <img class="productimg" src="assets/images/helldivers2.jpg" alt="helldivers2">
+                    <div class="productinfo">
+                        <p>Helldivers 2</p>
+                        <p>From: €20</p>
+                    </div>
+                    <p>
+                        <a href="checkout.html">
+                            <img class="shopcart" src="assets/images/shopcart.png" alt="shopcart">
+                        </a>
+                    </p>
+                </div>
+                <div class="product">
+                    <img class="productimg" src="assets/images/helldivers2.jpg" alt="helldivers2">
+                    <div class="productinfo">
+                        <p>Helldivers 2</p>
+                        <p>From: €20</p>
+                    </div>
+                    <p>
+                        <a href="checkout.html">
+                            <img class="shopcart" src="assets/images/shopcart.png" alt="shopcart">
+                        </a>
+                    </p>
+                </div>
+                <div class="product">
+                    <img class="productimg" src="assets/images/helldivers2.jpg" alt="helldivers2">
+                    <div class="productinfo">
+                        <p>Helldivers 2</p>
+                        <p>From: €20</p>
+                    </div>
+                    <p>
+                        <a href="checkout.html">
+                            <img class="shopcart" src="assets/images/shopcart.png" alt="shopcart">
+                        </a>
+                    </p>
+                </div>
+                <div class="product">
+                    <img class="productimg" src="assets/images/helldivers2.jpg" alt="helldivers2">
+                    <div class="productinfo">
+                        <p>Helldivers 2</p>
+                        <p>From: €20</p>
+                    </div>
+                    <p>
+                        <a href="checkout.html">
+                            <img class="shopcart" src="assets/images/shopcart.png" alt="shopcart">
+                        </a>
+                    </p>
+                </div>
+                <div class="product">
+                    <img class="productimg" src="assets/images/helldivers2.jpg" alt="helldivers2">
+                    <div class="productinfo">
+                        <p>Helldivers 2</p>
+                        <p>From: €20</p>
+                    </div>
+                    <p>
+                        <a href="checkout.html">
+                            <img class="shopcart" src="assets/images/shopcart.png" alt="shopcart">
+                        </a>
+                    </p>
+                </div>
+                <div class="product">
+                    <img class="productimg" src="assets/images/helldivers2.jpg" alt="helldivers2">
+                    <div class="productinfo">
+                        <p>Helldivers 2</p>
+                        <p>From: €20</p>
+                    </div>
+                    <p>
+                        <a href="checkout.html">
+                            <img class="shopcart" src="assets/images/shopcart.png" alt="shopcart">
+                        </a>
+                    </p>
+                </div>
+                <div class="product">
+                    <img class="productimg" src="assets/images/helldivers2.jpg" alt="helldivers2">
+                    <div class="productinfo">
+                        <p>Helldivers 2</p>
+                        <p>From: €20</p>
+                    </div>
+                    <p>
+                        <a href="checkout.html">
+                            <img class="shopcart" src="assets/images/shopcart.png" alt="shopcart">
+                        </a>
+                    </p>
+                </div>
+                <div class="product">
+                    <img class="productimg" src="assets/images/helldivers2.jpg" alt="helldivers2">
+                    <div class="productinfo">
+                        <p>Helldivers 2</p>
+                        <p>From: €20</p>
+                    </div>
+                    <p>
+                        <a href="checkout.html">
+                            <img class="shopcart" src="assets/images/shopcart.png" alt="shopcart">
+                        </a>
+                    </p>
+                </div>
+                <div class="product">
+                    <img class="productimg" src="assets/images/helldivers2.jpg" alt="helldivers2">
+                    <div class="productinfo">
+                        <p>Helldivers 2</p>
+                        <p>From: €20</p>
+                    </div>
+                    <p>
+                        <a href="checkout.html">
+                            <img class="shopcart" src="assets/images/shopcart.png" alt="shopcart">
+                        </a>
+                    </p>
+                </div>
+                <div class="product">
+                    <img class="productimg" src="assets/images/helldivers2.jpg" alt="helldivers2">
+                    <div class="productinfo">
+                        <p>Helldivers 2</p>
+                        <p>From: €20</p>
+                    </div>
+                    <p>
+                        <a href="checkout.html">
+                            <img class="shopcart" src="assets/images/shopcart.png" alt="shopcart">
+                        </a>
+                    </p>
+                </div>
+                <div class="product">
+                    <img class="productimg" src="assets/images/helldivers2.jpg" alt="helldivers2">
+                    <div class="productinfo">
+                        <p>Helldivers 2</p>
+                        <p>From: €20</p>
+                    </div>
+                    <p>
+                        <a href="checkout.html">
+                            <img class="shopcart" src="assets/images/shopcart.png" alt="shopcart">
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <!-- Number of Products -->
+            <p>20 product(s)</p>
+        </div>
+        <!-- Footer Section 1 -->
+        <div id="footer1">
+            <!-- Footer Titles -->
+            <div id="titles">
+                <p>Safe payment</p>
+                <p>Fast delivery</p>
+                <p>24/7 support</p>
+                <p>About us</p>
+            </div>
+            <!-- Footer Information -->
+            <div id="information">
+                <p>Info</p>
+                <p>Info</p>
+                <p>Info</p>
+                <p>Info</p>
+            </div>
+        </div>
+        <!-- Footer Section 2 Copyright -->
+        <div id="footer2">
+            <p class="bigtext">Webshop door Soera</p>
+        </div>
+    </div>
+</body>
+</html>
